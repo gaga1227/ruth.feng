@@ -52,14 +52,14 @@
 	</div>
 </div><!-- /HEADER -->
 
-<!-- CONTAINER -->
-<div id="container" class="container view" ng-view></div>
-
 <!-- MSG -->
-<div id="message" class="text-center" ng-show="error">
+<div id="message" class="text-center" ng-hide="!error">
 	<p><i class="fa fa-5x fa-frown-o"></i></p>
 	<h3 ng-bind="errorMsg"></h3>
 </div><!-- /MSG -->
+
+<!-- CONTAINER -->
+<div id="container" class="container view" ng-view></div>
 
 <!-- UTILS -->
 <div id="utils" class="text-center">

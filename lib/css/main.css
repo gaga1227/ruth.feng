@@ -3,8 +3,17 @@
    ------------------------------------------------------------------------------ */
 
 body {
+	opacity:0;
 	padding-top:70px;
 	font-family:'Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',Arial,Helvetica,sans-serif;
+	/*transition*/
+	/*-webkit-transform:translate3d(0,0,0);*/
+	-webkit-transition:opacity 0.3s ease-in-out;
+	-moz-transition:opacity 0.3s ease-in-out;
+	transition:opacity 0.3s ease-in-out;
+}
+body.ready {
+	opacity:1;
 }
 
 
