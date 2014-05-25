@@ -59,21 +59,22 @@ body {
 
 	/* item */
 	.menu-category {
-		display:block; width:100%; margin-bottom:0.25em; padding:0.8em; float:none; clear:both;
+		display:inline-block; width:100%; margin-bottom:0.25em; padding:0.8em; float:none; clear:both;
+		vertical-align:top;
 	}
 
 /* responsive */
 @media (min-width: 501px) and (max-width: 767px) {
-	.menu-category { width:50%; float:left; clear:none; }
+	.menu-category { width:49.5%; }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-	.menu-category { width:50%; float:left; clear:none;}
+	.menu-category { width:49.5%; }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-	.menu-category { width:33%; float:left; clear:none;}
+	.menu-category { width:32.5%; }
 }
 @media (min-width: 1200px) {
-	.menu-category { width:25%; float:left; clear:none;}
+	.menu-category { width:24.5%; }
 }
 
 /* btnMore */
