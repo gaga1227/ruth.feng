@@ -1,1 +1,15 @@
-[{}]
+{
+	"pid": "b1",
+	"title": "Swisse Liver Detox",
+	"rating": 4,
+	"price": 208,
+	"img_thumb": "http://rs-swisse-cdn.noisybeastdigital.com/products/extras/1000/90/primary.png",
+	"img_poster": "http://rs-swisse-cdn.noisybeastdigital.com/products/extras/1000/90/xlarge.png",
+	"desc": "<p>Swisse的定位在澳洲保健品市场属于中高定位有25年的研制经验 生产高端高效保健品著称肝宝是这个牌子的镇山之宝</p><p>澳洲奥运代表团的指定保健品 价格225 120粒 (两个月分量)</p><p>睡眠不足 肝火盛 睡眠不好应酬烟酒过度必要补肝护肝产品</p>",
+	"usage": "<p>每天一次 餐后两粒</p>",
+	"functions": "<p>护肝排毒加速酒精分解</p>",
+	"gallery": [
+		"http://img03.taobaocdn.com/bao/uploaded/i3/12966019112429691/T1ZIgPXdtXXXXXXXXX_!!0-item_pic.jpg_310x310.jpg",
+		"http://easygo.com.au/image/cache/data/swisse/IMG_1138-500x500.JPG"
+	]
+}

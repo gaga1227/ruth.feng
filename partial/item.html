@@ -2,23 +2,19 @@
 <div id="container" class="container">
 	<div class="col-md-12">
 		<!-- CONTENT -->
-		<div id="content" class="row">
+		<div id="content" class="row itemView" bindonce="item" bo-class="item.pid">
 			<!-- FEAT -->
 			<div class="col-sm-6 col-sm-offset-3">
-				<h1 class="text-center">Swisse Liver Detox</h1>
-				<h3 class="hidden">热卖产品</h3>				
+				<h1 class="text-center" bo-text="item.title"></h1>
+				<h3 class="text-center">产品号:&nbsp;<span bo-text="item.pid" class="initialism"></span></h3>
+				<p class="text-center small ins">(凭此号订购)</p>
 				<div class="product">
-					<img class="product-image-poster" src="lib/img/img-poster.png" alt="">
-					<div class="text-right">
-						<i class="btn btn-icon fa fa-star"></i><i class="btn btn-icon fa fa-star"></i>
-					</div>
+					<img class="product-image-poster" src="lib/img/img-poster.png" alt="" bo-src="item.img_poster" bo-alt="item.title">
+					<div class="text-center"><i class="btn btn-icon fa fa-star" ng-repeat="i in getTimes(item.rating) track by $index"></i></div>
 					<hr>
-					<h2 class="hidden">Swisse Liver Detox</h2>
-					<p>Swisse的定位在澳洲保健品市场属于中高定位有25年的研制经验 生产高端高效保健品著称肝宝是这个牌子的镇山之宝</p>
-					<p>澳洲奥运代表团的指定保健品 价格225 120粒 (两个月分量)</p>
-					<p>睡眠不足 肝火盛 睡眠不好应酬烟酒过度必要补肝护肝产品</p>
+					<div class="desc" bo-html="item.desc"></div>
 					<hr>
-					<h2 class="text-right">208 RMB</h2>
+					<h2 class="text-center"><span bo-text="item.price"></span>&nbsp;RMB</h2>
 					<hr>
 					<ul class="nav nav-tabs">
 						<li class="active"><a data-toggle="tab" href="#usage" target="_self">用法</a></li>
@@ -28,18 +24,20 @@
 					<div class="tab-content">
 					  <div class="tab-pane active" id="usage">
 							<p>&nbsp;</p>
-							<p>每天一次 餐后两粒</p>
+							<p bo-hide="item.usage">暂无用法内容</p>
+							<div bo-html="item.usage"></div>
 					  </div>
 					  <div class="tab-pane" id="functions">
 					  	<p>&nbsp;</p>
-							<p>护肝排毒加速酒精分解</p>
+							<p bo-hide="item.usage">暂无功效内容</p>
+							<div bo-html="item.functions"></div>
 				  	</div>
 				  	<div class="tab-pane" id="gallery">
 				  		<p>&nbsp;</p>
-							<p class="hidden">暂无更多图片</p>
-							<p><img class="product-image-poster extra" src="lib/img/img-poster.png" alt=""></p>
-							<p><img class="product-image-poster extra" src="lib/img/img-poster.png" alt=""></p>
-							<p><img class="product-image-poster extra" src="lib/img/img-poster.png" alt=""></p>
+							<p bo-hide="item.gallery.length">暂无更多图片</p>
+							<p ng-repeat="i in getTimes(item.gallery.length) track by $index">
+								<img class="product-image-poster extra" src="" alt="" bo-src="item.gallery[$index]">
+							</p>
 				  	</div>
 					</div>
 				</div>

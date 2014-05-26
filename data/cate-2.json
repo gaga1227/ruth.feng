@@ -1,1 +1,13 @@
-[{}]
+{
+	"cate_title": "儿童专区",
+	"items":[
+		{"item_id": "e1"},
+		{"item_id": "e2"},
+		{"item_id": "e3"},
+		{"item_id": "e4"},
+		{"item_id": "e5"},
+		{"item_id": "e6"},
+		{"item_id": "e7"},
+		{"item_id": "e8"}
+	]
+}

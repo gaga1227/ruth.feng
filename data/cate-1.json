@@ -1,1 +1,13 @@
-[{}]
+{
+	"cate_title": "保健产品",
+	"items":[
+		{"item_id": "b1"},
+		{"item_id": "b2"},
+		{"item_id": "b3"},
+		{"item_id": "b4"},
+		{"item_id": "b5"},
+		{"item_id": "b6"},
+		{"item_id": "b7"},
+		{"item_id": "b8"}
+	]
+}

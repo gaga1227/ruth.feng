@@ -1,1 +1,13 @@
-[{}]
+{
+	"cate_title": "生活用品",
+	"items":[
+		{"item_id": "s1"},
+		{"item_id": "s2"},
+		{"item_id": "s3"},
+		{"item_id": "s4"},
+		{"item_id": "s5"},
+		{"item_id": "s6"},
+		{"item_id": "s7"},
+		{"item_id": "s8"}
+	]
+}

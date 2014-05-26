@@ -1,1 +1,13 @@
-[{}]
+{
+	"cate_title": "美妆药品",
+	"items":[
+		{"item_id": "m1"},
+		{"item_id": "m2"},
+		{"item_id": "m3"},
+		{"item_id": "m4"},
+		{"item_id": "m5"},
+		{"item_id": "m6"},
+		{"item_id": "m7"},
+		{"item_id": "m8"}
+	]
+}
