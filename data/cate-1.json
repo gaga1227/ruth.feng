@@ -1,13 +1,14 @@
 {
-	"cate_title": "保健产品",
-	"items":[
-		{"item_id": "b1"},
-		{"item_id": "b2"},
-		{"item_id": "b3"},
-		{"item_id": "b4"},
-		{"item_id": "b5"},
-		{"item_id": "b6"},
-		{"item_id": "b7"},
-		{"item_id": "b8"}
+	"cid": "1",
+	"title": "保健产品",
+	"item_keys":[
+		{"pid": "b1"},
+		{"pid": "b2"},
+		{"pid": "b3"},
+		{"pid": "b4"},
+		{"pid": "b5"},
+		{"pid": "b6"},
+		{"pid": "b7"},
+		{"pid": "b8"}
 	]
 }
