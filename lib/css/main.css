@@ -90,7 +90,7 @@ body.ready {
 
 #footer {
 	margin:2em 0 0 0;
-	background:#e5e4ea;
+	background:#f2f2f2;
 }
 
 #contact ul {
@@ -183,19 +183,21 @@ a.product:focus {
 
 
 /* ------------------------------------------------------------------------------
-   VIEW - ITEM
+   VIEWS
    ------------------------------------------------------------------------------ */
-	 
-/* itemView item */
+
+/* -------------------------------------------------------------------------- */
+/* itemView */
+
+/* item */
 .itemView .product { padding-top:0; }
 
+/* -------------------------------------------------------------------------- */
+/* cateView */
 
-/* ------------------------------------------------------------------------------
-   VIEW - CATE
-   ------------------------------------------------------------------------------ */
-	 
 /* badge */
-.cateView .list-group-item > .badge { float:none; }
+.cateView .list-group-item > .badge,
+.homeView .list-group-item > .badge { float:none; }
 
 
 /* ------------------------------------------------------------------------------
@@ -204,3 +206,14 @@ a.product:focus {
 	 
 /* text styles */
 .ins { color:#999; }
+.price { color:#ff3b30; font-weight:700; }
+.price sub { bottom:0; font-size:0.4em; }
+.cateTitle { color:#007aff; }
+.cateTitle.hot { color:#ff3b30; }
+.fa.hot { 
+	display:inline-block; width:1.8em; height:1.8em; 
+	background:#ff9501; color:#fff;
+	line-height:1.8em;
+	/*border-radius*/-webkit-border-radius:50%; border-radius:50%;
+	/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding-box; background-clip:padding-box; }
+.fa-wechat { color:#1c980b; }

@@ -5,213 +5,74 @@
 		<div id="intro" class="center-block text-center">
 			<h1 class="brand"><img src="lib/img/brand.png" width="280" height="100" alt="澳洲健康生活馆"></h1>
 			<div>
-				<hr><p class="lead">澳洲健康产品直送</p>	<hr>
+				<hr><p class="lead">澳洲健康产品直送&nbsp;&nbsp;<i class="fa fa-paper-plane-o"></i></p><hr>
 			</div>
-		</div>
+		</div><!-- INTRO -->
 		<!-- CONTENT -->
-		<div id="content" class="row">
+		<div id="content" class="row homeView">
 			<!-- FEAT -->
-			<div class="col-sm-4">
-				<h3 class="text-left">热卖产品</h3>
+			<div class="col-sm-4" bindonce="feat">
+				<h3 class="text-center cateTitle hot"><i class="fa fa-thumbs-o-up hot"></i>&nbsp;&nbsp;热卖产品</h3>
 				<div class="product">
-					<a href="#item/b1">
-						<img class="product-image-poster" src="lib/img/img-poster.png" alt="">
-						<div>
-							<i class="btn btn-icon fa fa-star"></i><i class="btn btn-icon fa fa-star"></i>
-						</div>
+					<a href="#" bo-href="'#item/' + feat.pid">
+						<img class="product-image-poster" src="lib/img/img-poster.png" alt="" bo-src="feat.img_poster" bo-alt="feat.title">
+						<div class="text-center"><i class="btn btn-icon fa fa-star" ng-repeat="i in getTimes(feat.rating) track by $index"></i></div>
 					</a>
 					<hr>
-					<h2>Swisse Liver Detox</h2>
-					<p>Swisse的定位在澳洲保健品市场属于中高定位有25年的研制经验 生产高端高效保健品著称肝宝是这个牌子的镇山之宝</p>
-					<p>澳洲奥运代表团的指定保健品 价格225 120粒 (两个月分量)</p>
-					<p>睡眠不足 肝火盛 睡眠不好应酬烟酒过度必要补肝护肝产品</p>
+					<h2 class="text-center" bo-text="feat.title"></h2>
+					<h3 class="text-center">产品号:&nbsp;<span bo-text="feat.pid" class="initialism"></span></h3>
+					<p>&nbsp;</p>
+					<div class="desc" bo-html="feat.desc"></div>
 					<hr>
-					<h2 class="text-right">208 RMB</h2>
+					<h2 class="text-center price">&yen;<span bo-text="feat.price"></span><sub>&nbsp;RMB</sub></h2>
 					<hr>
 					<ul class="nav nav-tabs">
 						<li class="active"><a data-toggle="tab" href="#usage" target="_self">用法</a></li>
 						<li><a data-toggle="tab" href="#functions" target="_self">功效</a></li>
-						<li><a data-toggle="tab" href="#gallery" target="_self">更多图片</a></li>
 					</ul>
 					<div class="tab-content">
 					  <div class="tab-pane active" id="usage">
-					  	<p>&nbsp;</p>
-							<p>每天一次 餐后两粒</p>
+							<p>&nbsp;</p>
+							<p bo-hide="feat.usage">暂无用法内容</p>
+							<div bo-html="feat.usage"></div>
 					  </div>
 					  <div class="tab-pane" id="functions">
 					  	<p>&nbsp;</p>
-							<p>护肝排毒加速酒精分解</p>
-				  	</div>
-				  	<div class="tab-pane" id="gallery">
-				  		<p>&nbsp;</p>
-							<p>暂无更多图片</p>
+							<p bo-hide="feat.functions">暂无功效内容</p>
+							<div bo-html="feat.functions"></div>
 				  	</div>
 					</div>
 				</div>
 			</div><!-- /FEAT -->
 			<!-- MAIN -->
 			<div class="col-sm-8">
-
 				<!-- CATE -->
-				<div class="cate">
-					<h3 class="text-center">保健产品</h3>
+				<div class="cate" ng-repeat="cate in cates" bindonce="cate" bo-class="'cate-' + cate.cid">
+					<h3 class="text-center cateTitle" bo-text="cate.title"></h3>
 					<div class="productsrow">
+						<!-- NO PRODUCT -->
+						<div class="text-center" ng-show="cate.noProduct">
+							<p>&nbsp;</p>
+							<p>此分类暂无任何产品</p>
+						</div>
 						<!-- ITEM -->
-						<a class="product menu-category" href="#item/b1">
-							<div class="menu-category-name list-group-item">产品号：<span class="pull-right">B1</span></div>
+						<a class="product menu-category" href="#" 
+							ng-repeat="item in cate.items" bindonce="item" bo-href="'#item/' + item.pid">
+							<div class="menu-category-name list-group-item">产品号：<b><span class="pull-right initialism" bo-text="item.pid"></span></b></div>
 							<div class="product-image">
-								<img src="lib/img/img-thumb.png" alt="">
+								<img src="lib/img/img-thumb.png" alt="" bo-src="item.img_thumb" bo-alt="item.title">
 							</div>
-							<div class="menu-item list-group-item clearfix">Belt<span class="badge">£28</span></div>
-						</a>
-						<!-- ITEM -->
-						<a class="product menu-category" href="#item/b1">
-							<div class="menu-category-name list-group-item">产品号：<span class="pull-right">B1</span></div>
-							<div class="product-image">
-								<img src="lib/img/img-thumb.png" alt="">
+							<div class="menu-item list-group-item text-center">
+								<h4 bo-text="item.title"></h4>
+								<p class="badge">&yen;<span bo-text="item.price"></span></p>
 							</div>
-							<div class="menu-item list-group-item clearfix">Belt<span class="badge">£28</span></div>
-						</a>
-						<!-- ITEM -->
-						<a class="product menu-category" href="#item/b1">
-							<div class="menu-category-name list-group-item">产品号：<span class="pull-right">B1</span></div>
-							<div class="product-image">
-								<img src="lib/img/img-thumb.png" alt="">
-							</div>
-							<div class="menu-item list-group-item clearfix">Belt<span class="badge">£28</span></div>
-						</a>
-						<!-- ITEM -->
-						<a class="product menu-category" href="#item/b1">
-							<div class="menu-category-name list-group-item">产品号：<span class="pull-right">B1</span></div>
-							<div class="product-image">
-								<img src="lib/img/img-thumb.png" alt="">
-							</div>
-							<div class="menu-item list-group-item clearfix">Belt<span class="badge">£28</span></div>
-						</a>
+						</a><!-- /ITEM -->
+						<!-- MORE -->
+						<div class="text-right" ng-hide="cate.noProduct"><a class="btnMore" href="#" bo-href="'#category/' + cate.cid">更多产品&nbsp;<i class="fa fa-angle-right"></i></a></div>
+						<!-- SEP -->
+						<hr ng-hide="$index == cates.length-1">
 					</div>
-					<div class="text-right"><a class="btnMore" href="#category/1">更多产品 <i class="fa fa-angle-right"></i></a></div>
-				</div>
-				
-				<!-- CATE -->
-				<div class="cate">
-					<h3 class="text-center">儿童专区</h3>
-					<div class="productsrow">
-						<!-- ITEM -->
-						<a class="product menu-category" href="#item/b1">
-							<div class="menu-category-name list-group-item">产品号：<span class="pull-right">B1</span></div>
-							<div class="product-image">
-								<img src="lib/img/img-thumb.png" alt="">
-							</div>
-							<div class="menu-item list-group-item clearfix">Belt<span class="badge">£28</span></div>
-						</a>
-						<!-- ITEM -->
-						<a class="product menu-category" href="#item/b1">
-							<div class="menu-category-name list-group-item">产品号：<span class="pull-right">B1</span></div>
-							<div class="product-image">
-								<img src="lib/img/img-thumb.png" alt="">
-							</div>
-							<div class="menu-item list-group-item clearfix">Belt<span class="badge">£28</span></div>
-						</a>
-						<!-- ITEM -->
-						<a class="product menu-category" href="#item/b1">
-							<div class="menu-category-name list-group-item">产品号：<span class="pull-right">B1</span></div>
-							<div class="product-image">
-								<img src="lib/img/img-thumb.png" alt="">
-							</div>
-							<div class="menu-item list-group-item clearfix">Belt<span class="badge">£28</span></div>
-						</a>
-						<!-- ITEM -->
-						<a class="product menu-category" href="#item/b1">
-							<div class="menu-category-name list-group-item">产品号：<span class="pull-right">B1</span></div>
-							<div class="product-image">
-								<img src="lib/img/img-thumb.png" alt="">
-							</div>
-							<div class="menu-item list-group-item clearfix">Belt<span class="badge">£28</span></div>
-						</a>
-					</div>
-					<div class="text-right"><a class="btnMore" href="#category/2">更多产品 <i class="fa fa-angle-right"></i></a></div>
-				</div>
-				
-				<!-- CATE -->
-				<div class="cate">
-					<h3 class="text-center">美妆药品</h3>
-					<div class="productsrow">
-						<!-- ITEM -->
-						<a class="product menu-category" href="#item/b1">
-							<div class="menu-category-name list-group-item">产品号：<span class="pull-right">B1</span></div>
-							<div class="product-image">
-								<img src="lib/img/img-thumb.png" alt="">
-							</div>
-							<div class="menu-item list-group-item clearfix">Belt<span class="badge">£28</span></div>
-						</a>
-						<!-- ITEM -->
-						<a class="product menu-category" href="#item/b1">
-							<div class="menu-category-name list-group-item">产品号：<span class="pull-right">B1</span></div>
-							<div class="product-image">
-								<img src="lib/img/img-thumb.png" alt="">
-							</div>
-							<div class="menu-item list-group-item clearfix">Belt<span class="badge">£28</span></div>
-						</a>
-						<!-- ITEM -->
-						<a class="product menu-category" href="#item/b1">
-							<div class="menu-category-name list-group-item">产品号：<span class="pull-right">B1</span></div>
-							<div class="product-image">
-								<img src="lib/img/img-thumb.png" alt="">
-							</div>
-							<div class="menu-item list-group-item clearfix">Belt<span class="badge">£28</span></div>
-						</a>
-						<!-- ITEM -->
-						<a class="product menu-category" href="#item/b1">
-							<div class="menu-category-name list-group-item">产品号：<span class="pull-right">B1</span></div>
-							<div class="product-image">
-								<img src="lib/img/img-thumb.png" alt="">
-							</div>
-							<div class="menu-item list-group-item clearfix">Belt<span class="badge">£28</span></div>
-						</a>
-					</div>
-					<div class="text-right"><a class="btnMore" href="#category/3">更多产品 <i class="fa fa-angle-right"></i></a></div>
-				</div>
-				
-				<!-- CATE -->
-				<div class="cate">
-					<h3 class="text-center">生活用品</h3>
-					<div class="productsrow">
-						<!-- ITEM -->
-						<a class="product menu-category" href="#item/b1">
-							<div class="menu-category-name list-group-item">产品号：<span class="pull-right">B1</span></div>
-							<div class="product-image">
-								<img src="lib/img/img-thumb.png" alt="">
-							</div>
-							<div class="menu-item list-group-item clearfix">Belt<span class="badge">£28</span></div>
-						</a>
-						<!-- ITEM -->
-						<a class="product menu-category" href="#item/b1">
-							<div class="menu-category-name list-group-item">产品号：<span class="pull-right">B1</span></div>
-							<div class="product-image">
-								<img src="lib/img/img-thumb.png" alt="">
-							</div>
-							<div class="menu-item list-group-item clearfix">Belt<span class="badge">£28</span></div>
-						</a>
-						<!-- ITEM -->
-						<a class="product menu-category" href="#item/b1">
-							<div class="menu-category-name list-group-item">产品号：<span class="pull-right">B1</span></div>
-							<div class="product-image">
-								<img src="lib/img/img-thumb.png" alt="">
-							</div>
-							<div class="menu-item list-group-item clearfix">Belt<span class="badge">£28</span></div>
-						</a>
-						<!-- ITEM -->
-						<a class="product menu-category" href="#item/b1">
-							<div class="menu-category-name list-group-item">产品号：<span class="pull-right">B1</span></div>
-							<div class="product-image">
-								<img src="lib/img/img-thumb.png" alt="">
-							</div>
-							<div class="menu-item list-group-item clearfix">Belt<span class="badge">£28</span></div>
-						</a>
-					</div>
-					<div class="text-right"><a class="btnMore" href="#category/4">更多产品 <i class="fa fa-angle-right"></i></a></div>
-				</div>
-
+				</div><!-- /CATE -->
 			</div><!-- /MAIN -->
 		</div><!-- /CONTENT -->
 	</div>

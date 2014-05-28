@@ -1,1 +1,27 @@
-[{}]
+{
+	"feat": {
+		"pid": "b1"
+	},
+	"cates": [
+		{
+			"cid": "1",
+			"title": "保健产品",
+			"item_keys":[{"pid": "b1"}, {"pid": "b2"}, {"pid": "b3"}, {"pid": "b4"}]
+		},
+		{
+			"cid": "2",
+			"title": "儿童专区",
+			"item_keys":[]
+		},
+		{
+			"cid": "3",
+			"title": "美妆药品",
+			"item_keys":[]
+		},
+		{
+			"cid": "4",
+			"title": "生活用品",
+			"item_keys":[]
+		}
+	]
+}

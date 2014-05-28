@@ -7,14 +7,14 @@
 			<div class="col-sm-6 col-sm-offset-3">
 				<h1 class="text-center" bo-text="item.title"></h1>
 				<h3 class="text-center">产品号:&nbsp;<span bo-text="item.pid" class="initialism"></span></h3>
-				<p class="text-center small ins">(凭此号订购)</p>
+				<p class="text-center small ins">(凭此号订购)&nbsp;&nbsp;<i class="fa fa-arrow-up"></i></p>
 				<div class="product">
 					<img class="product-image-poster" src="lib/img/img-poster.png" alt="" bo-src="item.img_poster" bo-alt="item.title">
 					<div class="text-center"><i class="btn btn-icon fa fa-star" ng-repeat="i in getTimes(item.rating) track by $index"></i></div>
-					<hr>
+					<p>&nbsp;</p>
 					<div class="desc" bo-html="item.desc"></div>
 					<hr>
-					<h2 class="text-center"><span bo-text="item.price"></span>&nbsp;RMB</h2>
+					<h2 class="text-center price">&yen;<span bo-text="item.price"></span><sub>&nbsp;RMB</sub></h2>
 					<hr>
 					<ul class="nav nav-tabs">
 						<li class="active"><a data-toggle="tab" href="#usage" target="_self">用法</a></li>
