@@ -45,16 +45,31 @@ body.ready {
 /* -------------------------------------------------------------------------- */
 /* brand */
 #intro .brand {
-	width:auto; max-width:280px; height:auto; margin:1em auto 0.5em auto;
+	width:auto; max-width:280px; height:auto; margin:1em auto 0.5em auto; }
+
+	#intro .brand img {	
+		display:block; width:100%; height:auto; }
+
+/* -------------------------------------------------------------------------- */		
+/* brand-right */
+#intro .brand-right { 
+	display:block; position:absolute; top:38px; right:15px; 
+	width:auto; max-width:200px; height:100px; margin:0 auto; padding:0; }
+	
+	#intro .brand-right img {	
+		display:block; width:100%; height:auto; }
+
+/* responsive */
+@media (max-width: 500px) {
+	#intro .brand-right { display:none; }
+}
+@media (max-width: 991px) {
+	#intro .brand-right { position:static; top:auto; right:auto; }
 }
 
-	#intro .brand img {
-		display:block; width:100%; height:auto;
-	}
-
-	#intro .lead {
-		color:#2b2b2b;
-	}
+/* -------------------------------------------------------------------------- */
+/* lead */
+#intro .lead { color:#2b2b2b; }
 
 /* -------------------------------------------------------------------------- */
 /* btnHome */
@@ -203,7 +218,10 @@ a.product:focus {
 /* ------------------------------------------------------------------------------
    COMMON
    ------------------------------------------------------------------------------ */
-	 
+
+/* layout */
+.clearer { float:none; clear:both; }
+
 /* text styles */
 .ins { color:#999; }
 .price { color:#ff3b30; font-weight:700; }
