@@ -1,0 +1,126 @@
+{
+  "items" : {
+    "item-b6" : {
+      "price" : "158-268",
+      "usage" : "<p>成人：每日一次，每次两粒，进餐时服，或依照医疗专业人士指示服用;</p><p>关节炎患者:成人：每天三次，每次最多４粒，饭后食用或遵医嘱</p><p>十二岁以下儿童：请选用Blackmores儿童果味鱼油丸。</p>",
+      "pid" : "b6",
+      "rating" : 0,
+      "img_thumb" : "http://media-cache-ak0.pinimg.com/236x/97/20/7c/97207c644a3400cd4fda6b9541fb84e2.jpg",
+      "title" : "Blackmores Fish Oil",
+      "img_poster" : "http://media-cache-ak0.pinimg.com/originals/97/20/7c/97207c644a3400cd4fda6b9541fb84e2.jpg",
+      "desc" : "<p>无腥味，不含任何化学添加成份(例如聚山梨醇酯)，天然香草柠檬味能够掩盖鱼腥味，含有天然的奥米加3脂肪酸，有助舒缓关节不适及改善关节灵活性，有助维持心脏和心血管系统健康，有助维护眼睛及脑部功能，有助降低一般人的血脂（三酸甘油脂）水平，通过铅汞测试。200粒/400粒</p>",
+      "functions" : ""
+    },
+    "item-b3" : {
+      "price" : 128,
+      "usage" : "<p>一日2-3粒，饭中或饭后立即服食</p>",
+      "pid" : "b3",
+      "rating" : 0,
+      "img_thumb" : "http://media-cache-ak0.pinimg.com/236x/a3/68/65/a368651624119973f00cdc4aa3012f65.jpg",
+      "title" : "Swisse Calcium + Vitamin D",
+      "img_poster" : "http://media-cache-ak0.pinimg.com/originals/a3/68/65/a368651624119973f00cdc4aa3012f65.jpg",
+      "desc" : "<p>Swisse Ultiboost钙片+维生素D片中的钙质部分主要是柠檬酸钙，和其他形式的钙质相比，更容易被人体吸收； 其维生素D则主要是维生素D3，能够提高肌体对钙的吸收，促进骨骼生长。另外Swisse Ultiboost钙片+维生素D片还含有Bioperine， 是一种黑胡椒提取物。人体每天自汗水及尿液中排出体内钙质，这些被消耗的钙质也必须从每日摄取的营养中去补充，以达到身体钙质的平衡， 但由于钙属于不容易被吸收的营养素，所以是缺一不可的重要营养素。</p>",
+      "functions" : ""
+    },
+    "item-b5" : {
+      "price" : 308,
+      "usage" : "<p>成人：每日1粒。或遵从专业人士意见。</p>",
+      "pid" : "b5",
+      "rating" : 0,
+      "img_thumb" : "http://media-cache-ec0.pinimg.com/236x/3d/95/bc/3d95bc8b6f4c38dcf09c6b2086a668d5.jpg",
+      "title" : "Blackmores Healthy Joints",
+      "img_poster" : "http://media-cache-ec0.pinimg.com/originals/3d/95/bc/3d95bc8b6f4c38dcf09c6b2086a668d5.jpg",
+      "desc" : "<p>氨基葡萄糖是是软骨基质和关节滑液的天然成分，身体本身也会自己产生。这是一个主要构建物质，与蛋白质一起，构成软骨的结构单元。这些结构单元，称为聚集蛋白聚糖（aggrecans），为关节间的弹性、韧性、吸震功能发挥扮演着重要角色。 退化性关节炎的特征是关节退化和软骨流失。随着年龄增长，关节磨损会令软骨退化，变得更容易断裂和受损，最后引致典型的退化性关节炎。葡萄糖胺有助舒缓这些症状，减少软骨磨损，并且暂时缓解由症状引起的痛楚。研究人员在临床测试中发现，膝盖退化性关节炎患者每日3次连续服用硫化葡萄糖胺500毫克四星期，可大大减少膝盖疼痛和提高灵活性.</p>",
+      "functions" : ""
+    },
+    "item-b8" : {
+      "price" : 218,
+      "usage" : "<p>2-3岁儿童每天一颗，4岁及以上儿童每天一到两颗，或询医嘱</p>",
+      "pid" : "b8",
+      "rating" : 0,
+      "img_thumb" : "http://media-cache-ec0.pinimg.com/236x/d8/09/16/d80916258d158e0367c04ac3152758bd.jpg",
+      "title" : "Kids Smart Multivitamin",
+      "img_poster" : "http://media-cache-ec0.pinimg.com/originals/d8/09/16/d80916258d158e0367c04ac3152758bd.jpg",
+      "desc" : "<p>Nature's Way Kids Smart Complete Fish Oil+Multivitamin不仅集合了鱼油的成分，还添加了孩子每天所需维生素，帮助宝宝获取成长过程中足够的营养。此产品并含有儿童每天所需的16种维他命和矿物质维持儿童健康和成长。鱼油含有儿童所需的Omega-3.缺乏Omega-3可能产生学习，记忆，视力和行为举动方面的问题。这个产品可以促进脑力发育并有助于提高儿童的记忆力，行为举动，读写能力，对学习不集中等问题有明显的帮助。</p>",
+      "functions" : ""
+    },
+    "item-b2" : {
+      "price" : 198,
+      "usage" : "<p>每日1片 餐后马上服用</p>",
+      "pid" : "b2",
+      "rating" : 0,
+      "img_thumb" : "http://media-cache-ak0.pinimg.com/236x/ef/3a/cb/ef3acbc50872dd0a74baf9a30111466b.jpg",
+      "title" : "Swisse Hair Skin Nail",
+      "img_poster" : "http://media-cache-ak0.pinimg.com/originals/ef/3a/cb/ef3acbc50872dd0a74baf9a30111466b.jpg",
+      "desc" : "<p>液体胶原蛋白是一种复杂的配方含高质量的营养成分去支持胶原蛋白的产生，提供头发、皮肤、指甲必需的营养， 胶原蛋白能保湿、滋养、亮肤、紧肤、防皱、修复、营养皮肤的作用。硅血橙萃取精华含高水平的抗氧剂成分帮助抵抗自由基， 临床试验证实能有效的减少应氧压力。</p>",
+      "functions" : ""
+    },
+    "item-b1" : {
+      "price" : 208,
+      "usage" : "<p>每天一次 餐后两粒</p>",
+      "pid" : "b1",
+      "rating" : 0,
+      "gallery" : [ "http://img03.taobaocdn.com/bao/uploaded/i3/12966019112429691/T1ZIgPXdtXXXXXXXXX_!!0-item_pic.jpg_310x310.jpg", "http://easygo.com.au/image/cache/data/swisse/IMG_1138-500x500.JPG" ],
+      "img_thumb" : "http://media-cache-ak0.pinimg.com/236x/df/d9/b9/dfd9b98a712612eda0c83a84a3f5dcfb.jpg",
+      "title" : "Swisse Liver Detox",
+      "img_poster" : "http://media-cache-ak0.pinimg.com/originals/df/d9/b9/dfd9b98a712612eda0c83a84a3f5dcfb.jpg",
+      "desc" : "<p>Swisse的定位在澳洲保健品市场属于中高定位有25年的研制经验 生产高端高效保健品著称肝宝是这个牌子的镇山之宝。澳洲奥运代表团的指定保健品 价格225 120粒 (两个月分量)。睡眠不足，肝火盛，睡眠不好应酬烟酒过度必要补肝护肝产品。</p>",
+      "functions" : "<p>护肝排毒加速酒精分解</p>"
+    },
+    "item-b4" : {
+      "price" : "178-268",
+      "usage" : "<p>每日1片，随餐服用，或餐后马上服用</p>",
+      "pid" : "b4",
+      "rating" : 0,
+      "img_thumb" : "http://media-cache-ec0.pinimg.com/236x/5b/ef/46/5bef46a3ff2ac7b4a4f2ee3a12ad4a90.jpg",
+      "title" : "Swisse Women's Ultivite",
+      "img_poster" : "http://media-cache-ec0.pinimg.com/originals/5b/ef/46/5bef46a3ff2ac7b4a4f2ee3a12ad4a90.jpg",
+      "desc" : "<p>Swisse专为现代都市女性设计的配方，历经25多年的全球性研究和临床认证，随科学发展进步不断更新制成。全面为女士提供每日所需的必须维生素、矿物质和草本元素，并特别添加抗老化元素。能有效抗疲劳，舒缓压力，改善女性生理机能，帮助女士每日维持生活与工作各方面达到生理和心理的最佳状态， 轻松一片令您自信活力一整天。本产品还可以帮助女性舒缓压力，抵制焦虑的情绪，糖、葡萄糖的低敏感配方。降低人体有害物质（Homocysteine)的水平。男士们关爱妻子等女性家人的最佳选择。60粒/120粒</p>",
+      "functions" : ""
+    },
+    "item-b7" : {
+      "price" : "158-268",
+      "usage" : "<p>成人：每日一次，每次两粒，进餐时服，或依照医疗专业人士指示服用;</p><p>关节炎患者:成人：每天三次，每次最多４粒，饭后食用或遵医嘱</p><p>十二岁以下儿童：请选用Blackmores儿童果味鱼油丸。</p>",
+      "pid" : "b6",
+      "rating" : 0,
+      "img_thumb" : "http://media-cache-ak0.pinimg.com/236x/97/20/7c/97207c644a3400cd4fda6b9541fb84e2.jpg",
+      "title" : "Blackmores Fish Oil",
+      "img_poster" : "http://media-cache-ak0.pinimg.com/originals/97/20/7c/97207c644a3400cd4fda6b9541fb84e2.jpg",
+      "desc" : "<p>无腥味，不含任何化学添加成份(例如聚山梨醇酯)，天然香草柠檬味能够掩盖鱼腥味，含有天然的奥米加3脂肪酸，有助舒缓关节不适及改善关节灵活性，有助维持心脏和心血管系统健康，有助维护眼睛及脑部功能，有助降低一般人的血脂（三酸甘油脂）水平，通过铅汞测试。200粒/400粒</p>",
+      "functions" : ""
+    }
+  },
+  "feat" : {
+    "pid" : "b1"
+  },
+  "cates" : [ {
+    "item_keys" : [ {
+      "pid" : "b1"
+    }, {
+      "pid" : "b2"
+    }, {
+      "pid" : "b3"
+    }, {
+      "pid" : "b4"
+    }, {
+      "pid" : "b5"
+    }, {
+      "pid" : "b6"
+    }, {
+      "pid" : "b7"
+    }, {
+      "pid" : "b8"
+    } ],
+    "cid" : "1",
+    "title" : "保健产品"
+  }, {
+    "cid" : "2",
+    "title" : "儿童专区"
+  }, {
+    "cid" : "3",
+    "title" : "美妆药品"
+  }, {
+    "cid" : "4",
+    "title" : "生活用品"
+  } ]
+}

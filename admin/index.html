@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="adminApp">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>澳洲健康生活馆 - Admin Area</title>
+<!-- ICON -->
+<link rel="apple-touch-icon-precomposed" href="../apple-touch-icon-precomposed.png">
+<!-- CSS -->
+<link href="../lib/icon/font-awesome.min.css" rel="stylesheet">
+<link href="../lib/css/bootstrap.css" rel="stylesheet">
+<link href="../lib/css/main.css" rel="stylesheet">
+<!--[if lt IE 9]>
+	<script src="../lib/js/oldie/es5-shim.min.js"></script>
+<![endif]-->
+<!-- JS:VENDOR -->
+<script src="../lib/js/modernizr.all.js"></script>
+<script src="../lib/js/jquery-1.7.2.js"></script>
+<script src="../lib/js/bootstrap.min.js"></script>
+<!-- JS:NG -->
+<script src="../lib/js/angular-1.2.9/angular.js"></script>
+<script src="../lib/js/angular-1.2.9/angular-route.js"></script>
+<script src="../lib/js/angular-1.2.9/angular-animate.js"></script>
+<script src="../lib/js/angular-1.2.9/angular-sanitize.js"></script>
+<script src="../lib/js/angular-1.2.9/angular-resource.js"></script>
+<script src="../lib/js/angular-1.2.9/i18n/angular-locale_zh-cn.js"></script>
+<!-- JS:FIREBASE -->
+<script src="https://cdn.firebase.com/js/client/1.0.15/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.js"></script>
+<!-- JS:CUSTOM -->
+<script src="../lib/js/utils.js"></script>
+<script src="../lib/js/main.js"></script>
+</head>
+<body id="">
+
+<!-- HEADER -->
+<div id="header" class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#home" class="navbar-brand btnHome" ng-class="{active:sectID=='home'}"><i class="fa fa-home"></i>&nbsp;首页</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li ng-class="{active:cateID==1}"><a href="#category/1">保健产品</a></li>
+				<li ng-class="{active:cateID==2}"><a href="#category/2">儿童专区</a></li>
+				<li ng-class="{active:cateID==3}"><a href="#category/3">美妆药品</a></li>
+				<li ng-class="{active:cateID==4}"><a href="#category/4">生活用品</a></li>
+				<li ng-class="{active:cateID==5}"><a href="#category/5">其他服务</a></li>
+				<li><a href="#" class="btnScroll" data-target="#contact">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- /HEADER -->
+
+<!-- MSG -->
+<div id="message" class="text-center" ng-hide="!error">
+	<p><i class="fa fa-5x fa-frown-o"></i></p>
+	<h3 ng-bind="errorMsg"></h3>
+</div><!-- /MSG -->
+
+<!-- CONTAINER -->
+<div id="container" class="container">
+	<div class="col-md-12">
+		<!-- INTRO -->
+		<div id="intro" class="center-block text-center">
+			<h1 class="brand"><img src="../lib/img/brand.png" width="280" height="100" alt="澳洲健康生活馆"></h1>
+			<a href="http://weixin.qq.com/r/KI0lKiTEQho9hzVJn9gM" target="_blank" class="brand-right"><img src="../lib/img/brand-right.png" width="200" height="100" alt="微信号:ruth0807"></a>
+			<div>
+				<hr><p class="lead">澳洲健康产品直送&nbsp;&nbsp;<i class="fa fa-paper-plane-o"></i></p><hr>
+			</div>
+		</div><!-- INTRO -->
+	</div>
+</div><!-- /CONTAINER -->
+
+<!-- CONTAINER -->
+<div id="container" class="container view" ng-view></div>
+
+<!-- LOADER -->
+<div id="loader" ng-class="{active: isLoading}"><i class="fa fa-5x fa-spin fa-refresh"></i></div>
+
+<!-- JS:NG-APP -->
+<script src="../lib/js/ng-admin-app/ng-filters.js"></script>
+<script src="../lib/js/ng-admin-app/ng-services.js"></script>
+<script src="../lib/js/ng-admin-app/ng-directives.js"></script>
+<script src="../lib/js/ng-admin-app/ng-controllers.js"></script>
+<script src="../lib/js/ng-admin-app/ng-app.js"></script>
+</body>
+</html>

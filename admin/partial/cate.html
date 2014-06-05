@@ -1,0 +1,42 @@
+<!-- CONTAINER -->
+<div id="container" class="container">
+	<div class="col-md-12">
+		<!-- INTRO -->
+		<div id="intro" class="center-block text-center">
+			<h1 class="brand"><img src="lib/img/brand.png" width="280" height="100" alt="澳洲健康生活馆"></h1>
+			<a href="http://weixin.qq.com/r/KI0lKiTEQho9hzVJn9gM" target="_blank" class="brand-right"><img src="lib/img/brand-right.png" width="200" height="100" alt="微信号:ruth0807"></a>
+			<div>
+				<hr><p class="lead">澳洲健康产品直送&nbsp;&nbsp;<i class="fa fa-paper-plane-o"></i></p><hr>
+			</div>
+		</div><!-- INTRO -->
+		<!-- CONTENT -->
+		<div id="content" class="row cateView" bindonce="cate" bo-class="'cate-' + cate.cid">
+			<!-- MAIN -->
+			<div class="col-sm-12">
+				<!-- CATE -->
+				<div class="cate">
+					<h3 class="text-center cateTitle" bo-text="cate.title"></h3>
+					<div class="productsrow">
+						<!-- NO PRODUCT -->
+						<div class="text-center" ng-show="noProduct">
+							<p>&nbsp;</p>
+							<p>此分类暂无任何产品</p>
+						</div>
+						<!-- ITEM -->
+						<a class="product menu-category" href="#" 
+							ng-repeat="item in cate.items" bindonce="item" bo-href="'#item/' + item.pid">
+							<div class="menu-category-name list-group-item">产品号：<b><span class="pull-right initialism" bo-text="item.pid"></span></b></div>
+							<div class="product-image">
+								<img src="lib/img/img-thumb.png" alt="" bo-src="item.img_thumb" bo-alt="item.title">
+							</div>
+							<div class="menu-item list-group-item text-center">
+								<h4 bo-text="item.title"></h4>
+								<p class="badge">&yen;<span bo-text="item.price"></span></p>
+							</div>
+						</a><!-- /ITEM -->
+					</div>
+				</div><!-- /CATE -->
+			</div><!-- /MAIN -->
+		</div><!-- /CONTENT -->
+	</div>
+</div><!-- /CONTAINER -->

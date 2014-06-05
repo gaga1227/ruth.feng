@@ -1,0 +1,47 @@
+<!-- CONTAINER -->
+<div id="container" class="container">
+	<div class="col-md-12">
+		<!-- CONTENT -->
+		<div id="content" class="row itemView" bindonce="item" bo-class="item.pid">
+			<!-- FEAT -->
+			<div class="col-sm-6 col-sm-offset-3">
+				<h1 class="text-center" bo-text="item.title"></h1>
+				<h3 class="text-center">产品号:&nbsp;<span bo-text="item.pid" class="initialism"></span></h3>
+				<p class="text-center small ins">(凭此号订购)&nbsp;&nbsp;<i class="fa fa-arrow-up"></i></p>
+				<div class="product">
+					<img class="product-image-poster" src="lib/img/img-poster.png" alt="" bo-src="item.img_poster" bo-alt="item.title">
+					<div class="text-center"><i class="btn btn-icon fa fa-star" ng-repeat="i in getTimes(item.rating) track by $index"></i></div>
+					<p>&nbsp;</p>
+					<div class="desc" bo-html="item.desc"></div>
+					<hr>
+					<h2 class="text-center price">&yen;<span bo-text="item.price"></span><sub>&nbsp;RMB</sub></h2>
+					<hr>
+					<ul class="nav nav-tabs">
+						<li class="active"><a data-toggle="tab" href="#usage" target="_self">用法</a></li>
+						<li><a data-toggle="tab" href="#functions" target="_self">功效</a></li>
+						<li><a data-toggle="tab" href="#gallery" target="_self">更多图片</a></li>
+					</ul>
+					<div class="tab-content">
+					  <div class="tab-pane active" id="usage">
+							<p>&nbsp;</p>
+							<p bo-hide="item.usage">暂无用法内容</p>
+							<div bo-html="item.usage"></div>
+					  </div>
+					  <div class="tab-pane" id="functions">
+					  	<p>&nbsp;</p>
+							<p bo-hide="item.functions">暂无功效内容</p>
+							<div bo-html="item.functions"></div>
+				  	</div>
+				  	<div class="tab-pane" id="gallery">
+				  		<p>&nbsp;</p>
+							<p bo-hide="item.gallery.length">暂无更多图片</p>
+							<p ng-repeat="i in getTimes(item.gallery.length) track by $index">
+								<img class="product-image-poster extra" src="" alt="" bo-src="item.gallery[$index]">
+							</p>
+				  	</div>
+					</div>
+				</div>
+			</div><!-- /FEAT -->
+		</div><!-- /CONTENT -->
+	</div>
+</div><!-- /CONTAINER -->
