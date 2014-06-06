@@ -1,4 +1,4 @@
 ruth.feng
 ==========
 
-Static catalogue website for Ruth Feng
+Catalogue website for Ruth Feng
