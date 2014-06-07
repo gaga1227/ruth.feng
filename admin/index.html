@@ -4,13 +4,14 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>澳洲健康生活馆 - Admin Area</title>
+<title>澳洲健康生活馆 - 页面管理平台</title>
 <!-- ICON -->
 <link rel="apple-touch-icon-precomposed" href="../apple-touch-icon-precomposed.png">
 <!-- CSS -->
 <link href="../lib/icon/font-awesome.min.css" rel="stylesheet">
 <link href="../lib/css/bootstrap.css" rel="stylesheet">
 <link href="../lib/css/main.css" rel="stylesheet">
+<link href="../lib/css/admin.css" rel="stylesheet">
 <!--[if lt IE 9]>
 	<script src="../lib/js/oldie/es5-shim.min.js"></script>
 <![endif]-->
@@ -32,7 +33,7 @@
 <script src="../lib/js/utils.js"></script>
 <script src="../lib/js/main.js"></script>
 </head>
-<body id="">
+<body id="admin">
 
 <!-- HEADER -->
 <div id="header" class="navbar navbar-inverse navbar-fixed-top">
@@ -43,16 +44,13 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a href="#home" class="navbar-brand btnHome" ng-class="{active:sectID=='home'}"><i class="fa fa-home"></i>&nbsp;首页</a>
+			<span class="navbar-brand"><i class="fa fa-cog"></i>&nbsp;页面管理平台</span>
 		</div>
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav">
-				<li ng-class="{active:cateID==1}"><a href="#category/1">保健产品</a></li>
-				<li ng-class="{active:cateID==2}"><a href="#category/2">儿童专区</a></li>
-				<li ng-class="{active:cateID==3}"><a href="#category/3">美妆药品</a></li>
-				<li ng-class="{active:cateID==4}"><a href="#category/4">生活用品</a></li>
-				<li ng-class="{active:cateID==5}"><a href="#category/5">其他服务</a></li>
-				<li><a href="#" class="btnScroll" data-target="#contact">联系我们</a></li>
+				<li ng-class="{active:cateID==1}"><a href="#category">首页管理</a></li>
+				<li ng-class="{active:cateID==1}"><a href="#category">类别管理</a></li>
+				<li ng-class="{active:cateID==2}"><a href="#item">产品管理</a></li>
 			</ul>
 		</div>
 	</div>
@@ -66,13 +64,12 @@
 
 <!-- CONTAINER -->
 <div id="container" class="container">
-	<div class="col-md-12">
+	<div class="col-xs-12 col-md-8 col-md-offset-2">
 		<!-- INTRO -->
 		<div id="intro" class="center-block text-center">
 			<h1 class="brand"><img src="../lib/img/brand.png" width="280" height="100" alt="澳洲健康生活馆"></h1>
-			<a href="http://weixin.qq.com/r/KI0lKiTEQho9hzVJn9gM" target="_blank" class="brand-right"><img src="../lib/img/brand-right.png" width="200" height="100" alt="微信号:ruth0807"></a>
 			<div>
-				<hr><p class="lead">澳洲健康产品直送&nbsp;&nbsp;<i class="fa fa-paper-plane-o"></i></p><hr>
+				<hr><p class="lead">{ $rootscope section title }</p><hr>
 			</div>
 		</div><!-- INTRO -->
 	</div>

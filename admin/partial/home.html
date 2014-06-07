@@ -1,14 +1,76 @@
 <!-- CONTAINER -->
 <div id="container" class="container">
-	<div class="col-md-12">
+	<div class="col-xs-12 col-md-8 col-md-offset-2">
 		
-		<!-- test -->
-		<p ng-bind="app.feat.pid"></p>
-		<p ng-bind="app.cates.0.title"></p>
-		<p ng-bind="app.cates.1.title"></p>
-		<p ng-bind="app.cates.2.title"></p>
-		<p ng-bind="app.cates.3.title"></p>
-		<p ng-bind="app.items['item-b1'].title"></p>
+		<form class="form-horizontal" role="form">
+		
+			<h3 class="text-center cateTitle"><span class="step">Step 1.</span>选择&nbsp;'热卖产品'</h3>
+			<div class="form-group">
+				<label for="formFeatID" class="col-sm-3 control-label">热卖产品</label>
+				<div class="col-sm-9">
+					<select class="form-control" id="formFeatID">
+						<option>b1</option>
+						<option>b2</option>
+						<option>b3</option>
+						<option>b4</option>
+						<option>b5</option>
+					</select>
+				</div>
+			</div>
+			
+			<h3 class="text-center cateTitle"><span class="step">Step 2.</span>选择&nbsp;'保健产品'&nbsp;的推荐产品</h3>
+			<div class="form-group">
+				<label for="formFeatID" class="col-sm-3 control-label">'保健产品'&nbsp;1</label>
+				<div class="col-sm-9">
+					<select class="form-control" id="formFeatID">
+						<option>b1</option>
+						<option>b2</option>
+						<option>b3</option>
+						<option>b4</option>
+						<option>b5</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="formFeatID" class="col-sm-3 control-label">'保健产品'&nbsp;2</label>
+				<div class="col-sm-9">
+					<select class="form-control" id="formFeatID">
+						<option>b1</option>
+						<option>b2</option>
+						<option>b3</option>
+						<option>b4</option>
+						<option>b5</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="formFeatID" class="col-sm-3 control-label">'保健产品'&nbsp;3</label>
+				<div class="col-sm-9">
+					<select class="form-control" id="formFeatID">
+						<option>b1</option>
+						<option>b2</option>
+						<option>b3</option>
+						<option>b4</option>
+						<option>b5</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="formFeatID" class="col-sm-3 control-label">'保健产品'&nbsp;4</label>
+				<div class="col-sm-9">
+					<select class="form-control" id="formFeatID">
+						<option>b1</option>
+						<option>b2</option>
+						<option>b3</option>
+						<option>b4</option>
+						<option>b5</option>
+					</select>
+				</div>
+			</div>
+			
+			<p class="text-center">... repeat ...</p>
+			
+		</form>
 		
 	</div>
 </div><!-- /CONTAINER -->

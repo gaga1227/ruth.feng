@@ -1738,7 +1738,8 @@ input[type="date"] {
   line-height: 34px;
 }
 .form-group {
-  margin-bottom: 15px;
+	margin-top: 30px;
+  margin-bottom: 30px;
 }
 .radio,
 .checkbox {
@@ -4027,8 +4028,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-inverse .navbar-brand {
   color: #d1eefe;
 }
-.navbar-inverse .navbar-brand:hover,
-.navbar-inverse .navbar-brand:focus {
+.navbar-inverse a.navbar-brand:hover,
+.navbar-inverse a.navbar-brand:focus {
   color: #f8cf00;
   background-color: transparent;
 }
