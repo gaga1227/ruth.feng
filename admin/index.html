@@ -38,21 +38,7 @@
 <!-- HEADER -->
 <div id="header" class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<span class="navbar-brand"><i class="fa fa-cog"></i>&nbsp;页面管理平台</span>
-		</div>
-		<div class="collapse navbar-collapse">
-			<ul class="nav navbar-nav">
-				<li ng-class="{active:cateID==1}"><a href="#category">首页管理</a></li>
-				<li ng-class="{active:cateID==1}"><a href="#category">类别管理</a></li>
-				<li ng-class="{active:cateID==2}"><a href="#item">产品管理</a></li>
-			</ul>
-		</div>
+		<span class="navbar-brand">澳洲健康生活馆 - 页面管理</span>
 	</div>
 </div><!-- /HEADER -->
 
@@ -61,19 +47,6 @@
 	<p><i class="fa fa-5x fa-frown-o"></i></p>
 	<h3 ng-bind="errorMsg"></h3>
 </div><!-- /MSG -->
-
-<!-- CONTAINER -->
-<div id="container" class="container">
-	<div class="col-xs-12 col-md-8 col-md-offset-2">
-		<!-- INTRO -->
-		<div id="intro" class="center-block text-center">
-			<h1 class="brand"><img src="../lib/img/brand.png" width="280" height="100" alt="澳洲健康生活馆"></h1>
-			<div>
-				<hr><p class="lead">{ $rootscope section title }</p><hr>
-			</div>
-		</div><!-- INTRO -->
-	</div>
-</div><!-- /CONTAINER -->
 
 <!-- CONTAINER -->
 <div id="container" class="container view" ng-view></div>
