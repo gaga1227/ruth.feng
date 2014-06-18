@@ -15,9 +15,14 @@
 	/* input */
 	#admin form input.text,
 	#admin form textarea { 
-		display:block; width:100%; resize:vertical; }
-		
+		display:block; width:100%; }
+	#admin form textarea {
+		resize:vertical; }
 
+	/* button */
+	#admin form button {
+		padding:5px 15px;
+		color:#000; font-size:16px; font-weight:bold; }
 	
 
 /* -------------------------------------------------------------------------- */
