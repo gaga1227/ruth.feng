@@ -11,17 +11,17 @@
 		{
 			"cid": "2",
 			"title": "儿童专区",
-			"item_keys":[]
+			"item_keys":[{"pid": "e1"}, {"pid": "e2"}, {"pid": "e3"}, {"pid": "e4"}]
 		},
 		{
 			"cid": "3",
 			"title": "美妆药品",
-			"item_keys":[]
+			"item_keys":[{"pid": "m1"}]
 		},
 		{
 			"cid": "4",
 			"title": "生活用品",
-			"item_keys":[]
+			"item_keys":[{"pid": "s1"}]
 		}
 	]
 }

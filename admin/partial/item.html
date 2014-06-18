@@ -10,7 +10,7 @@
 			<p><input class="text" type="text" placeholder="" ng-model="item.title"></p>
 			<!-- rating -->
 			<h3 class="cateTitle"><span class="step">3.</span>推荐度</h3>
-			<p><input class="text" type="number" placeholder="1-5" ng-model="item.rating"></p>
+			<p><input class="text" type="number" placeholder="1-5" min="0" max="5" ng-model="item.rating"></p>
 			<!-- price -->
 			<h3 class="cateTitle"><span class="step">4.</span>价格 *</h3>
 			<p><input class="text" type="text" placeholder="" ng-model="item.price"></p>
