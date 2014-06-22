@@ -3,13 +3,19 @@
 	<div class="col-xs-12 col-sm-6 col-sm-offset-3">
 		<form id="formCate" role="form">
 			<!-- feat -->
-			<h3 class="cateTitle"><span class="step">1.</span>热卖产品 <button class="pull-right" ng-click="saveFeat()">保存</button></h3>
+			<h3 class="cateTitle">
+				<span class="step">1.</span>热卖产品
+				<button class="pull-right" ng-click="saveFeat()">保存</button>
+			</h3>
 			<p><input class="text" type="text" placeholder="" ng-model="featItem"></p>
 			<!-- category -->
-			<h3 class="cateTitle"><span class="step">2.</span>保健产品 <button class="pull-right" ng-click="saveCate(0)">保存</button></h3>
-			<p><textarea rows="2" placeholder="" ng-model="cate1Items"></textarea></p>
-			<h3 class="cateTitle"><span class="step">3.</span>儿童专区 <button class="pull-right" ng-click="saveCate(1)">保存</button></h3>
-			<p><textarea rows="2" placeholder="" ng-model="cate2Items"></textarea></p>			
+			<div ng-repeat="cate in cates">	
+				<h3 class="cateTitle">
+					<span class="step">{{$index + 2}}.</span>{{cate.title}}
+					<button class="pull-right" ng-click="saveCate($index)">保存</button>
+				</h3>
+				<p><textarea rows="2" placeholder="" ng-model="catesStr[$index]"></textarea></p>
+			</div>	
 		</form>
 	</div>
 </div><!-- /CONTAINER -->
