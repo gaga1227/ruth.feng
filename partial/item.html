@@ -9,7 +9,8 @@
 				<h3 class="text-center">产品号:&nbsp;<span bo-text="item.pid" class="initialism"></span></h3>
 				<p class="text-center small ins">(凭此号订购)&nbsp;&nbsp;<i class="fa fa-arrow-up"></i></p>
 				<div class="product">
-					<img class="product-image-poster" src="lib/img/img-poster.png" alt="" bo-src="item.img_poster" bo-alt="item.title">
+					<img class="product-image-poster" ng-if="isLoading" src="lib/img/img-poster-loading.png" alt="" bo-src="item.img_poster" bo-alt="item.title">
+					<img class="product-image-poster" ng-if="!isLoading" src="lib/img/img-poster.png" alt="" bo-src="item.img_poster" bo-alt="item.title">
 					<div class="text-center"><i class="btn btn-icon fa fa-star" ng-repeat="i in getTimes(item.rating) track by $index"></i></div>
 					<p>&nbsp;</p>
 					<div class="desc" bo-html="item.desc"></div>
