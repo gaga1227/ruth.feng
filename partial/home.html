@@ -15,8 +15,9 @@
 			<div class="col-sm-4" bindonce="feat">
 				<h3 class="text-center cateTitle hot"><i class="fa fa-thumbs-o-up hot"></i>&nbsp;&nbsp;热卖产品</h3>
 				<div class="product">
-					<a href="#" bo-href="'#item/' + feat.pid">
-						<img class="product-image-poster" src="lib/img/img-poster.png" alt="" bo-src="feat.img_poster" bo-alt="feat.title">
+					<a href="#" bo-href="'#item/' + feat.pid">					
+						<img class="product-image-poster" ng-if="isLoading" src="lib/img/img-poster-loading.png" alt="" bo-src="feat.img_poster" bo-alt="feat.title">
+						<img class="product-image-poster" ng-if="!isLoading" src="lib/img/img-poster.png" alt="" bo-src="feat.img_poster" bo-alt="feat.title">
 						<div class="text-center"><i class="btn btn-icon fa fa-star" ng-repeat="i in getTimes(feat.rating) track by $index"></i></div>
 					</a>
 					<hr>
@@ -61,7 +62,7 @@
 							ng-repeat="item in cate.items" bindonce="item" bo-href="'#item/' + item.pid">
 							<div class="menu-category-name list-group-item">产品号：<b><span class="pull-right initialism" bo-text="item.pid"></span></b></div>
 							<div class="product-image">
-								<img src="lib/img/img-thumb.png" alt="" bo-src="item.img_thumb" bo-alt="item.title">
+								<img src="" alt="" bo-src="item.img_thumb" bo-alt="item.title">
 							</div>
 							<div class="menu-item list-group-item text-center">
 								<h4 bo-text="item.title"></h4>
